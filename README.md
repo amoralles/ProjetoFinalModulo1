@@ -1,0 +1,1 @@
+Esse projeto é o projeto final do primeiro módulo do curso de análise de dados da Resilia.
