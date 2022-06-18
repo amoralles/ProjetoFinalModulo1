@@ -1,4 +1,4 @@
-import funcoes_cl, menu1, funcoes_si, main_squidinvest
+import funcoes_cl, menu_cliente, menu_credito, menu_invest
 # A função inicial, que pergunta pela primeira vez qual opção o cliente deseja:
 def inicio1():
     primeiraEscolha = int(input("""Seja Bem-Vindo(a) ao  menu de auto-atendimendo do Banco Squid! 
@@ -22,19 +22,19 @@ def começando(primeiraEscolha):
         escolhaCliente = (funcoes_cl.menu1())
         # um valor foi atribuído  a escolhaCliente, de acordo com qual valor o usuário digitou para menu1()
         # esse valor será utilizado pela função menuCliente() para escolher uma das 4 opções de informações para clientes.
-        menu1.menuCliente(escolhaCliente)
+        menu_cliente.menuCliente(escolhaCliente)
         # a função concluir() pede ao usuário se ele está satisfeito com o atendimento ou quer voltar do início. Ao voltar pro início ele atribui um novo valor a squidBank
         primeiraEscolha = funcoes_cl.concluir()
         # o return solicita que a função começando comece de novo, agora como novo valor de squidBank.
         return começando(primeiraEscolha)
 
     if primeiraEscolha == 2:
-        #chamar módulos e funções para menu2
+        escolhaCliente = menu_credito.menu_credito()
         primeiraEscolha = funcoes_cl.concluir()
         return começando(primeiraEscolha)
 
     if primeiraEscolha == 3:
-        escolhaCliente = (main_squidinvest.menu_invest())
+        escolhaCliente = (menu_invest.menu_invest())
         primeiraEscolha = funcoes_cl.concluir()
         return começando(primeiraEscolha)    
     
