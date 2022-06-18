@@ -1,4 +1,4 @@
-import funcoes, menu1
+import funcoes_cl, menu1, funcoes_si, main_squidinvest
 # A função inicial, que pergunta pela primeira vez qual opção o cliente deseja:
 def inicio1():
     primeiraEscolha = int(input("""Seja Bem-Vindo(a) ao  menu de auto-atendimendo do Banco Squid! 
@@ -19,33 +19,33 @@ primeiraEscolha = inicio1()
 def começando(primeiraEscolha):
     # Se o usuário escolheu 1 em inicio(), uma nova variável chama a função 'menu1()', para tirar duvidas de quem já é cliente.
     if primeiraEscolha == 1:
-        escolhaCliente = (funcoes.menu1())
+        escolhaCliente = (funcoes_cl.menu1())
         # um valor foi atribuído  a escolhaCliente, de acordo com qual valor o usuário digitou para menu1()
         # esse valor será utilizado pela função menuCliente() para escolher uma das 4 opções de informações para clientes.
         menu1.menuCliente(escolhaCliente)
         # a função concluir() pede ao usuário se ele está satisfeito com o atendimento ou quer voltar do início. Ao voltar pro início ele atribui um novo valor a squidBank
-        primeiraEscolha = funcoes.concluir()
+        primeiraEscolha = funcoes_cl.concluir()
         # o return solicita que a função começando comece de novo, agora como novo valor de squidBank.
         return começando(primeiraEscolha)
 
     if primeiraEscolha == 2:
         #chamar módulos e funções para menu2
-        primeiraEscolha = funcoes.concluir()
+        primeiraEscolha = funcoes_cl.concluir()
         return começando(primeiraEscolha)
 
     if primeiraEscolha == 3:
-        #chamar módulos e funções para menu3
-        primeiraEscolha = funcoes.concluir()
+        escolhaCliente = (main_squidinvest.menu_invest())
+        primeiraEscolha = funcoes_cl.concluir()
         return começando(primeiraEscolha)    
     
     if primeiraEscolha == 4:
         #chamar módulos e funções para menu4
-        primeiraEscolha = funcoes.concluir()
+        primeiraEscolha = funcoes_cl.concluir()
         return começando(primeiraEscolha)
     
     if primeiraEscolha == 5:
                 #chamar módulos e funções para menu4
-        primeiraEscolha = funcoes.concluir()
+        primeiraEscolha = funcoes_cl.concluir()
         return começando(primeiraEscolha)
     
     if primeiraEscolha == 6:
