@@ -1,4 +1,4 @@
-import funcoes_cl, menu_cliente, menu_credito, menu_invest, menu_emprestimo
+import funcoes_cl, menu_cliente, menu_credito, menu_invest, menu_emprestimo, menu_naocliente
 # A função inicial, que pergunta pela primeira vez qual opção o cliente deseja:
 def inicio1():
     primeiraEscolha = int(input("""
@@ -46,7 +46,7 @@ def começando(primeiraEscolha):
         return começando(primeiraEscolha)
     
     if primeiraEscolha == 5:
-                #chamar módulos e funções para menu4
+        escolhaCliente = menu_naocliente.menu_nãocliente()
         primeiraEscolha = funcoes_cl.concluir()
         return começando(primeiraEscolha)
     
