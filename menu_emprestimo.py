@@ -1,5 +1,5 @@
 def emprestimo ():
-    nomeBanco='Grupo 7'
+    nomeBanco='SquidBank'
     protocolo=8854362
 #Menu principal
     opcao=5
