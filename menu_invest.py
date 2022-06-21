@@ -20,6 +20,7 @@ def menu_invest():
     Bem-vindo(a) ao nosso canal de investimentos!
     1 - Simular investimento
     2 - Quero investir agora!
+    3 - Saiba Mais
     Como podemos te ajudar hoje?
     Digite a opção desejada: """))
 
@@ -111,6 +112,28 @@ def menu_invest():
         else:
             
             return("Opção inválida. Por favor tente novamente")
+        
+    if escolha1 == 3:
+        
+        print("Aqui na SquidInvest+ te ajudamos a investir da melhor forma no Tesouro Direto!")
+        print("Tesouro Direto é um programa da Secretaria do Tesouro Nacional do Brasil lançado em 7 de janeiro de 2002 em parceria com a B3")
+        print("com o objetivo de democratizar a compra e venda de títulos públicos federais para pessoas físicas de forma 100% online.")
+        print(" . . . . .  . . . . . . . . . .  . . . . . . . . . .  . . . . . . . . . .  . . . . . . . . . .  . . . . . ")
+        print("")
+        print("1 - Tesouro Prefixado")
+             "2 - Tesouro SELIC  
+             "3 - Tesouro IPCA+")
+        escolha=input("Digite a opção desejada para obter mais informações:  ")
+           if escolha == 1:
+                print(" Tesouro Prefixado: O Tesouro Direto prefixado é um título de Renda Fixa com taxas de juros determinadas no momento da contratação. Ou seja, quando você empresta o seu dinheiro ao governo e já sabe de cara exatamente o quanto vai receber ao final do prazo do título")
+           elif escolha == 2:
+                print("Tesouro SELIC: O Tesouro Selic é um investimento de renda fixa. Ele costuma ser bastante recomendado, principalmente aos que procuram uma alternativa à poupança. Esse ativo tende a oferecer rentabilidade mais atrativa do que a caderneta. Além disso, ele ainda pode ser adaptado para objetivos sob qualquer prazo.")
+           elif escolha == 3:
+                print("Tesouro IPCA+ : O Tesouro Direto IPCA+ é um título público do governo federal. Parte da sua taxa de rendimento acompanha a inflação, enquanto a outra parcela é composta por um valor fixo. Ele tem investimento inicial de pouco mais de R$ 30 e diferentes datas de vencimento, que podem se encaixar em vários objetivos")
+           else:
+                print("Opção Inválida. Tente novamente!")
+       
+   
 
        
 
