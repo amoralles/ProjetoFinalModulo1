@@ -1,7 +1,6 @@
-def emprestimo ():
+#Menu principal - Empréstimos
+def menuPrincipal():
     nomeBanco='SquidBank'
-    protocolo=8854362
-#Menu principal
     opcao=5
     while opcao > 4:
         print("""\n        No empréstimo {} você encontra as melhores taxas do mercado
@@ -11,7 +10,14 @@ def emprestimo ():
         3 - Crédito automático 
         4 - Gostaria saber um pouco mais sobre os tipos de empréstimos """.format(nomeBanco))
         opcao=int(input('\n        Digite a opcao desejada : '))
+        return opcao
+       
+       
+opcao=menuPrincipal()
 #Opção 1 do MENU - Emprestimo consignado  
+def menuEmprestimoConsig():
+    nomeBanco='SquidBank'
+    protocolo=8854362
     if opcao==1:
         salario1=-1
         while salario1 < 0:      
@@ -32,12 +38,18 @@ def emprestimo ():
         print("\nEmpréstimo aprovado no valor de R$ : {:.2f}".format(opcao1))
         print("Ficaram {:.0f} parcelas de R$ {:.2f} ".format(prazo1, parcelas1))
         print("Parábens seu empréstimo foi aprovado protocolo {} ".format(protocolo+3))
-        print("Qualquer dúvida entre em contato com o suporte do banco {} !".format(nomeBanco))
-#Opção 2 do MENU - Emprestimo garantia                   
-    elif opcao==2:
+        print("Qualquer dúvida entre em contato com o suporte do {} !".format(nomeBanco))
+        return print("\n---O BANCO {} AGRADECE O SEU CONTATO TENHA UM ÓTIMO DIA !---\n\n\n".format(nomeBanco))
+
+        
+#Opção 2 do MENU - Emprestimo garantia
+def emprestimoGarantia():
+    nomeBanco='SquidBank'
+    protocolo=8854362                      
+    if opcao==2:
         print('\nO que deseja deixar como garantia para o banco? ')
         garantia= 4
-        if garantia > 3:
+        while garantia > 3:
             garantia=int(input('\n1 - CARRO / 2 - MOTO / 3 - IMOVEL : '))
         valorGarantia=float(input('Digite o valor da garantia : '))
         prazo2=121
@@ -59,8 +71,14 @@ def emprestimo ():
         print("Ficaram {:.0f} parcelas de R$ {:.2f} ".format(prazo2, parcelas2))
         print("Parábens seu empréstimo foi aprovado protocolo {} ".format(protocolo+3))
         print("Qualquer dúvida entre em contato com o suporte do banco {} !".format(nomeBanco))
-#Opção 3 do MENU - Crédito automático 
-    elif opcao==3:
+        return print("\n---O BANCO {} AGRADECE O SEU CONTATO TENHA UM ÓTIMO DIA !---\n\n\n".format(nomeBanco))
+
+
+#Opção 3 do MENU - Crédito automático
+def creditoAutomatico():
+    nomeBanco='SquidBank'
+    protocolo=8854362 
+    if opcao==3:
         cliente3=input("\nVocê já é cliente do Banco {} ? Digite sim ou nao : ".format(nomeBanco))
         if cliente3=='sim':
             print('\nTemos o melhor crédito com a melhor taxa de juros pra você que ja é cliente !')
@@ -77,10 +95,18 @@ def emprestimo ():
             print("Ficaram {:.0f} parcelas de R$ {:.2f} ".format(prazo3, parcelas3))
             print("Parábens seu empréstimo foi aprovado protocolo {} ".format(protocolo+3))
             print("Qualquer dúvida entre em contato com o suporte do banco {} !".format(nomeBanco))
+            return
         elif cliente3=='nao':
             print('\nInfelizmente essa opção não está disponível pra você !')
+            input('Tecle enter para retornar ao menu inicial de empréstimos')
+            menuEmprestimo()
+            return print("\n---O BANCO {} AGRADECE O SEU CONTATO TENHA UM ÓTIMO DIA !---\n\n\n".format(nomeBanco))
+
+            
 #Opção 4 do MENU - Mais informações 
-    elif opcao==4:
+def maisInformacoes():
+    nomeBanco='SquidBank'
+    if opcao==4:
         print("""
         -----1 - Emprestimo Consignado 
         Ele é descontado diretamente no contracheque, holerite ou benefício do INSS. JUROS DE 1.7% ao mês
@@ -91,9 +117,13 @@ def emprestimo ():
         Apenas para já clientes do banco. É uma opção de empréstimo com contratação simples e fácil 
         e para você usar como quiser. O valor solicitado é liberado na hora em sua conta corrente ou poupança.
         Prazo: Pague em até 180 meses. JUROS DE 1.3 % ao mês""")
-        
-#FINAL     
-    print("\n---O BANCO {} AGRADECE O SEU CONTATO TENHA UM ÓTIMO DIA !---\n\n\n".format(nomeBanco))
-    return 
-# emprestimo()
+        return print("\n---O BANCO {} AGRADECE O SEU CONTATO TENHA UM ÓTIMO DIA !---\n\n\n".format(nomeBanco))    
+    
+
+menuEmprestimoConsig()
+emprestimoGarantia()
+creditoAutomatico()
+maisInformacoes()
+
+
 
