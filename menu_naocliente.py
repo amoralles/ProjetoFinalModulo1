@@ -1,10 +1,10 @@
 def menu_nãocliente():
 
     squidBank = int(input("  Seja Bem vindo(a) ao Squid Bank, você selecionou a opção: NÃO SOU CLIENTE! "
-                        "\n  1 - Para informação sobre Empréstimos "
-                        "\n  2 - Para informação sobre Cartões"
-                        "\n  3 - Para informação sobre Consórcio"
-                        "\n  4 - Para informação sobre Solução De Dívidas"
+                        "\n  1 - Para informação sobre Solução De Dívidas."
+                        "\n  2 - Para informação sobre Cartões."
+                        "\n  3 - Para informação sobre Consórcio."
+                        "\n  4 - Para informação sobre Empréstimos."
                         "\n  Digite a opção desejada: "))
 
     empréstimo = ("""Você selecionou Empréstimo, explicaremos em mais detalhes sobre: 
