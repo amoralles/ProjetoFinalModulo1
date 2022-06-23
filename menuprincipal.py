@@ -41,7 +41,7 @@ def começando(primeiraEscolha):
         return começando(primeiraEscolha)    
     
     if primeiraEscolha == 4:
-        escolhaCliente = menu_emprestimo.emprestimo()
+        escolhaCliente = menu_emprestimo.menu_emprestimo()
         primeiraEscolha = funcoes_cl.concluir()
         return começando(primeiraEscolha)
     
