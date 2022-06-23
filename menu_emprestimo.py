@@ -1,6 +1,6 @@
 #Menu principal - Empréstimos
 def menu_emprestimo():
-    # nomeBanco='SquidBank'
+    nomeBanco='SquidBank'
     # opcao=5
     # while opcao > 4:
     def primeiraopcao():
