@@ -1,22 +1,22 @@
 *Esse projeto é o projeto final do primeiro módulo do curso de análise de dados da Resilia, elaborado pela Squad 7.*
 
-# SquidBank (powered by SquidSquad) 
+# SquidBank (powered by SquidSquad) #
 
 Autores:
 
-Marcus Vinicius dos Santos (marcus-vn-santos)
+Marcus Vinicius dos Santos (marcus-vn-santos) - 
   Co-Facilitador | Cartões de Crédito
   
-Ana Carolina Moralles (amoralles)
+Ana Carolina Moralles (amoralles) -
   Gestora de Conhecimento | Menu Principal/Sou Cliente
   
-Allyson Santana Rodrigues (ally-sr)
+Allyson Santana Rodrigues (ally-sr) -
   Gestor de Gente e Engajamento | Investimentos
   
-João Victor Julião (joaovictojuliao) 
+João Victor Julião (joaovictojuliao) -
   Colaborador I | Empréstimos 
  
-Patrick Eleoterio (Eleoteriop)
+Patrick Eleoterio (Eleoteriop) -
   Colaborador II | Não Sou Cliente 
   
  # O Projeto: SquidBank 
