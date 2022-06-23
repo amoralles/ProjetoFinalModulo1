@@ -40,7 +40,7 @@ def menu_emprestimo():
             print("Ficaram {:.0f} parcelas de R$ {:.2f} ".format(prazo1, parcelas1))
             print("Parábens seu empréstimo foi aprovado protocolo {} ".format(protocolo+3))
             print("Qualquer dúvida entre em contato com o suporte do {} !".format(nomeBanco))
-            return print("\n---O BANCO {} AGRADECE O SEU CONTATO TENHA UM ÓTIMO DIA !---\n\n\n".format(nomeBanco))
+            return print("\n---O {} AGRADECE O SEU CONTATO TENHA UM ÓTIMO DIA !---\n\n\n".format(nomeBanco))
 
             
     #Opção 2 do MENU - Emprestimo garantia
@@ -72,7 +72,7 @@ def menu_emprestimo():
             print("Ficaram {:.0f} parcelas de R$ {:.2f} ".format(prazo2, parcelas2))
             print("Parábens seu empréstimo foi aprovado protocolo {} ".format(protocolo+3))
             print("Qualquer dúvida entre em contato com o suporte do banco {} !".format(nomeBanco))
-            return print("\n---O BANCO {} AGRADECE O SEU CONTATO TENHA UM ÓTIMO DIA !---\n\n\n".format(nomeBanco))
+            return print("\n---O {} AGRADECE O SEU CONTATO TENHA UM ÓTIMO DIA !---\n\n\n".format(nomeBanco))
 
 
     #Opção 3 do MENU - Crédito automático
@@ -101,7 +101,7 @@ def menu_emprestimo():
                 print('\nInfelizmente essa opção não está disponível pra você !')
                 input('Tecle enter para retornar ao menu inicial de empréstimos')
                 menu_emprestimo()
-                return print("\n---O BANCO {} AGRADECE O SEU CONTATO TENHA UM ÓTIMO DIA !---\n\n\n".format(nomeBanco))
+                return print("\n---O {} AGRADECE O SEU CONTATO TENHA UM ÓTIMO DIA !---\n\n\n".format(nomeBanco))
 
                 
     #Opção 4 do MENU - Mais informações 
@@ -118,7 +118,7 @@ def menu_emprestimo():
             Apenas para já clientes do banco. É uma opção de empréstimo com contratação simples e fácil 
             e para você usar como quiser. O valor solicitado é liberado na hora em sua conta corrente ou poupança.
             Prazo: Pague em até 180 meses. JUROS DE 1.3 % ao mês""")
-            return print("\n---O BANCO {} AGRADECE O SEU CONTATO TENHA UM ÓTIMO DIA !---\n\n\n".format(nomeBanco))    
+            return print("\n---O {} AGRADECE O SEU CONTATO TENHA UM ÓTIMO DIA !---\n\n\n".format(nomeBanco))    
         
 
     menuEmprestimoConsig()
