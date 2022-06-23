@@ -4,7 +4,7 @@ def inicio2():
     1 - Se você já é cliente.
     2 - Se quer falar sobre cartão de crédito.
     3 - Se quer saber mais sobre investimentos.
-    4 - Se quer saber mais sobre impréstimos.
+    4 - Se quer saber mais sobre empréstimos.
     5 - Se ainda não é cliente do Banco Squid. 
     Digite a opção desejada: """))
     return squidBank
